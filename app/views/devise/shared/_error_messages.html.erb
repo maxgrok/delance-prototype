@@ -1,4 +1,13 @@
-<% if resource.errors.any? %>
+<section class="hero is-primary is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-6-table is-6-desktop is-6-widescreen">
+          <div class="box">
+            <div class="field has-text-centered">
+              <strong></strong>
+            </div>
+            <% if resource.errors.any? %>
   <div id="error_explanation">
     <h2>
       <%= I18n.t("errors.messages.not_saved",
@@ -13,3 +22,9 @@
     </ul>
   </div>
 <% end %>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
